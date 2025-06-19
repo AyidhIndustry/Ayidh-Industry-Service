@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "industry-services-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^12.18.1",
+    "lucide-react": "^0.517.0",
+    "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.3"
+    "rsuite": "^5.83.0",
+    "swiper": "^11.2.8"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

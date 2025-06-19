@@ -1,26 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import "tailwindcss";
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Exo 2", sans-serif;
+}
+
+h5,
+h6,
+p,
+span,
+li,
+div {
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --primary: #0e88cb;
+  --secondary: #2739a7;
+  --complementary: #ec7d1b;
+  --complementary-dark: #e06f0d;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+#navbar-lower {
+  z-index: 1000 !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .btn-primary {
+    @apply bg-[var(--complementary)] text-white text-base px-6 py-3 uppercase font-semibold cursor-pointer shadow-md transition-all duration-300 ease-in-out hover:bg-[var(--complementary-dark)]  hover:shadow-lg;
+  }
+  .heading {
+    @apply text-3xl md:text-4xl  font-bold text-gray-900 leading-tight;
+  }
+  .input-primary{
+    @apply w-full h-fit px-4 py-3 border border-gray-300  shadow-sm focus:outline-none focus:ring-2 focus:border-transparent focus:ring-[var(--complementary)] transition duration-200
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #ec7d1b;
+  font-size: 2rem;
 }
