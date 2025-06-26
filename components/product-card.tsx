@@ -12,7 +12,7 @@ interface ProductCardProps {
 const ProductCard = ({ image, title, description }: ProductCardProps) => {
   return (
       <motion.div
-      whileHover={{ y: -6 }} // move up 10px on hover
+      whileHover={{ y: -6  }} // move up 10px on hover
       transition={{ type: "spring", stiffness: 300 }}
       className="max-w-full bg-white shadow-md overflow-hidden"
     >
