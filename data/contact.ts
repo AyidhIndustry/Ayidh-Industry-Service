@@ -1,5 +1,5 @@
 export const contactDetails = {
-  phoneNumber: "+966 0509162731",
+  phoneNumber: "+966 509162731",
   address: "Al-Orayfiq Area 5001 Jubail, KSA",
   emailId: "ayidhindustryservices@gmail.com",
   emailId2: "info@ayidhindustryservices.com",
